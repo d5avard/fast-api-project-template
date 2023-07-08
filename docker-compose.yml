@@ -1,0 +1,21 @@
+version: '3'
+services:
+  frontend:
+    build: "./frontend"
+    ports:
+      - "8080:80"
+    networks:
+      - default
+      - network-1
+
+  backend:
+    build: "./backend"
+    networks:
+      - network-1
+    
+networks:
+  default:
+    name: ${COMPOSE_PROJECT_NAME}_network-0
+  network-1:
+
+

@@ -1,0 +1,22 @@
+{
+    "name": "frontend",
+	"service": "frontend",
+	"dockerComposeFile": [
+		"../../docker-compose.yml",
+		"../../docker-compose.devcontainer.yml"],
+    "overrideCommand": false,
+	"shutdownAction": "none",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"formulahendry.code-runner",
+				"magicstack.MagicPython",
+				"PKief.material-icon-theme"
+			]
+		}
+	},
+    "workspaceFolder": "/workspace/frontend"
+  }
