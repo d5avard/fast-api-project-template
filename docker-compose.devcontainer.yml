@@ -3,7 +3,14 @@ services:
   backend:
     volumes:
     - .:/workspace:cached
-
+  
   frontend:
     volumes:
     - .:/workspace:cached
+  
+  netshoot:
+    image: nicolaka/netshoot
+    command: sleep infinity
+    networks:
+      - default
+      - network-1

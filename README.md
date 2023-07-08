@@ -1,4 +1,4 @@
-# lab-3
+# Project template
 
 ## project template for developping with dev container in vscode
 
@@ -12,6 +12,10 @@ $ pip show uvicorn
 ## display logs container as tail command in linux
 ```bash
 $ docker logs --follow <container>
+```
+## launch command from netshoot container to others containers
+```bash
+$ docker exec -it netshoot bash
 ```
 
 ## References:
